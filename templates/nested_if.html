@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+</head>
+<body>
+	<center>
+        {% if a < 50 %}
+            {% if a == 20 %}
+            <h1>nested_if of a is {{a}}</h1>
+            {% elif a == 30 %}
+            <h1>nested_elif of a is {{a}}</h1>
+            {% endif %}
+        {% elif a < 100 %}
+            {% if a == 70 %}
+            <h1>nested_if of a is {{a}}</h1>
+            {% elif a == 90 %}
+            <h1>nested_elif of a is {{a}}</h1>
+            {% endif %}
+        {% else %}
+        <h1>else of a is {{a}}</h1>
+        {% endif %}
+    </center>
+</body>
+</html>

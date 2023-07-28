@@ -19,5 +19,8 @@ from django.urls import path
 from app.views import*
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('abc/',abc,name='abc')
+    path('abc/',abc,name='abc'),
+    path('if_else/',if_else,name='if_else'),
+    path('if_elif/',if_elif,name='if_elif'),
+    path('nested_if/',nested_if,name='nested_if'),
 ]
